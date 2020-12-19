@@ -269,6 +269,7 @@ class C_tempat_ibadah extends CI_Controller {
     }
 
 
+
     public function masjid(){
         $v_data['judul'] = 'DAFTAR MASJID';
         $v_role = $this->session->userdata('role');
