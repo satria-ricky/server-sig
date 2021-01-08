@@ -72,11 +72,23 @@
         </div>
       </li>
 
+
+
+<!-- 
       <li class="nav-item">
-        <a class="nav-link" href="<?= base_url(); ?>c_tempat_ibadah/peta">
-          <i class="fas fa-fw fa-map"></i>
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapsetThree">
+        <i class="fas fa-fw fa-map"></i>
           <span>Lihat peta</span></a>
-      </li>
+        </a>
+        <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">PETA:</h6>
+            <a class="collapse-item" href="<?= base_url(); ?>c_tempat_ibadah/peta">Lihat peta</a>
+            <a class="collapse-item" href="<?= base_url(); ?>c_tempat_ibadah/kelola_peta">Kelola peta</a>
+          </div>
+        </div>
+      </li> -->
+
 
 
       <hr class="sidebar-divider <?= $hilangkan; ?>" >

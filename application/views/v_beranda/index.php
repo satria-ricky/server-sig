@@ -109,5 +109,30 @@ function getData(id_kab){
 }
 
 
+function masjid() {
+  // console.log("masjid");
+  window.location.href="<?= base_url(); ?>c_tempat_ibadah/masjid";
+}
+
+function gereja() {
+  // console.log("masjid");
+  window.location.href="<?= base_url(); ?>c_tempat_ibadah/gereja";
+}
+
+function pura() {
+  // console.log("masjid");
+  window.location.href="<?= base_url(); ?>c_tempat_ibadah/pura";
+}
+
+function vihara() {
+  // console.log("masjid");
+  window.location.href="<?= base_url(); ?>c_tempat_ibadah/vihara";
+}
+
+function klenteng() {
+  // console.log("masjid");
+  window.location.href="<?= base_url(); ?>c_tempat_ibadah/klenteng";
+}
+
 
 </script>

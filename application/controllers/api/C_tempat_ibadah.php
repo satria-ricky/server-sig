@@ -21,12 +21,17 @@ class C_tempat_ibadah extends REST_Controller
 
     public function index_get()
     {
-        $v_id = $this->get('ti_id');
+        $v_id_kab = $this->get('kab_id');
+        $v_id_jenis = $this->get('jenis_id');
 
-        if ($v_id === null) {
-            $v_tempat_ibadah['list_tempat_ibadah']  = $this->M_tempat_ibadah->get_tempat_ibadah();
-        }else {
-            $v_tempat_ibadah['list_tempat_ibadah']  = $this->M_tempat_ibadah->get_tempat_ibadah($v_id);
+        if (($v_id_kab != null) && ($v_id_jenis != null)) {
+            $v_tempat_ibadah  = $this->M_tempat_ibadah->selectByKabJenis($v_id_kab,$v_id_jenis);
+        }elseif (($v_id_kab != null) && ($v_id_jenis === null)) {
+            $v_tempat_ibadah  = $this->M_tempat_ibadah->selectByKabupaten($v_id_kab);
+        }elseif (($v_id_kab === null) && ($v_id_jenis != null)) {
+            $v_tempat_ibadah  = $this->M_tempat_ibadah->selectByJenis($v_id_jenis);
+        }else{
+            $v_tempat_ibadah  = $this->M_tempat_ibadah->selectAlltempatIbadah();
         }
         
 

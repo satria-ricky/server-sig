@@ -19,6 +19,10 @@ class C_dashboard extends CI_Controller {
         $v_data['list_kabupaten'] = $this->M_kab_kec->selectAllkabupaten();
     	$v_data['list'] = $this->M_tempat_ibadah->selectAlltempatIbadah();
 
+		// var_dump( $v_data['list']);
+		// die();
+		
+		
     	// $v_data['tittle'] = 'Data tempat ibadah';
 
     	// $this->load->view('templates/header', $v_data);

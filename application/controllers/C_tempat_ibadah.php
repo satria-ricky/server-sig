@@ -35,7 +35,10 @@ class C_tempat_ibadah extends CI_Controller {
             
         }
 
-            $output = '<div class="col-xl-3 col-md-6 mb-4">
+        
+            $output = '
+            
+            <div class="col-xl-3 col-md-6 mb-4" onclick="masjid()" style="cursor: pointer;">
               <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
@@ -52,11 +55,14 @@ class C_tempat_ibadah extends CI_Controller {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> 
             </div>
+            
+            
+
 
             <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
+            <div class="col-xl-3 col-md-6 mb-4" onclick="gereja()" style="cursor: pointer;">
               <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
@@ -76,7 +82,7 @@ class C_tempat_ibadah extends CI_Controller {
               </div>
             </div>
 
-            <div class="col-xl-3 col-md-6 mb-4">
+            <div class="col-xl-3 col-md-6 mb-4" onclick="pura()" style="cursor: pointer;">
               <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
@@ -97,7 +103,7 @@ class C_tempat_ibadah extends CI_Controller {
             </div>
 
             <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
+            <div class="col-xl-3 col-md-6 mb-4" onclick="vihara()" style="cursor: pointer;">
               <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
@@ -117,7 +123,7 @@ class C_tempat_ibadah extends CI_Controller {
               </div>
             </div>
 
-            <div class="col-xl-3 col-md-6 mb-4">
+            <div class="col-xl-3 col-md-6 mb-4" onclick="klenteng()" style="cursor: pointer;">
               <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
@@ -219,9 +225,40 @@ class C_tempat_ibadah extends CI_Controller {
     }
 
 
+
+    //PETA
+
+
     public function peta (){
         
         $v_data['judul'] = 'PETA';
+        $v_data['tittle'] = 'Peta tempat ibadah';
+
+        $v_role = $this->session->userdata('role');
+        if ($v_role == 1) {
+            $v_data['hilangkan'] = '';
+        }else{
+            $v_data['hilangkan'] = 'd-none';
+        }
+
+        $v_id_username = $this->session->userdata('id_username');
+        $v_data['data_pengguna'] = $this->M_admin->get_pengguna($v_id_username);
+
+        $v_data['list_jenis'] = $this->M_tempat_ibadah->selectAlljenis();
+        $v_data['list_kabupaten'] = $this->M_kab_kec->selectAllkabupaten();
+        
+        $v_data['list'] = $this->M_tempat_ibadah->selectAlltempatIbadah();
+
+        $this->load->view('templates/header',  $v_data);
+        $this->load->view('templates/sidebar', $v_data);
+        $this->load->view('templates/topbar', $v_data);
+        $this->load->view('v_maps/maps',$v_data);
+        $this->load->view('templates/footer'); 
+    }
+
+    public function kelola_peta (){
+        
+        $v_data['judul'] = 'KELOLA PETA';
         $v_data['tittle'] = 'Peta tempat ibadah';
 
         $v_role = $this->session->userdata('role');
