@@ -1,6 +1,4 @@
 <?php
-
-
 class M_tempat_ibadah extends CI_model {
 
     public function get_tempat_ibadah($v_id = null)
@@ -29,9 +27,7 @@ class M_tempat_ibadah extends CI_model {
 
     public function selectAlltempatIbadah(){
         $sql='SELECT * FROM tb_ti LEFT JOIN tb_kabupaten ON tb_ti.ti_kabupaten = tb_kabupaten.kab_id LEFT JOIN tb_kecamatan ON tb_kecamatan.id_kab = tb_kabupaten.kab_id AND tb_kecamatan.kec_id = tb_ti.ti_kecamatan JOIN tb_jenis ON tb_ti.ti_jenis = tb_jenis.jenis_id';
-        return $query=$this->db->query($sql)->result_array();
-        // return $this->db->get('tb_ti')->result_array();
-        
+        return $query=$this->db->query($sql)->result_array(); 
     }
 
 
@@ -40,19 +36,16 @@ class M_tempat_ibadah extends CI_model {
     public function selectByKabupaten($kab){
         $sql='SELECT * FROM tb_ti LEFT JOIN tb_kabupaten ON tb_ti.ti_kabupaten = tb_kabupaten.kab_id LEFT JOIN tb_kecamatan ON tb_kecamatan.id_kab = tb_kabupaten.kab_id AND tb_kecamatan.kec_id = tb_ti.ti_kecamatan JOIN tb_jenis ON tb_ti.ti_jenis = tb_jenis.jenis_id WHERE ti_kabupaten =?' ;
         return $this->db->query($sql,$kab)->result_array();
-        // return $this->db->get('tb_ti')->result_array();
     }
 
     public function selectByJenis($jenis){
         $sql='SELECT * FROM tb_ti LEFT JOIN tb_kabupaten ON tb_ti.ti_kabupaten = tb_kabupaten.kab_id LEFT JOIN tb_kecamatan ON tb_kecamatan.id_kab = tb_kabupaten.kab_id AND tb_kecamatan.kec_id = tb_ti.ti_kecamatan JOIN tb_jenis ON tb_ti.ti_jenis = tb_jenis.jenis_id WHERE ti_jenis =?' ;
         return $this->db->query($sql,$jenis)->result_array();
-        // return $this->db->get('tb_ti')->result_array();
     }
 
     public function selectByKabJenis($kab, $jenis){
         $sql='SELECT * FROM tb_ti LEFT JOIN tb_kabupaten ON tb_ti.ti_kabupaten = tb_kabupaten.kab_id LEFT JOIN tb_kecamatan ON tb_kecamatan.id_kab = tb_kabupaten.kab_id AND tb_kecamatan.kec_id = tb_ti.ti_kecamatan JOIN tb_jenis ON tb_ti.ti_jenis = tb_jenis.jenis_id WHERE ti_kabupaten =? AND ti_jenis=?' ;
         return $this->db->query($sql, [$kab, $jenis])->result_array();
-        // return $this->db->get('tb_ti')->result_array();
     }
 
 // MASJID

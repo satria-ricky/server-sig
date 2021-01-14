@@ -1,12 +1,8 @@
 <?php
-
-
 class M_admin extends CI_model {
-
     public function selectAlladmin($id){
         $sql='SELECT * FROM tb_admin JOIN tb_bidang ON tb_admin.admin_bidang = tb_bidang.bidang_id WHERE admin_id!=?';
         return $this->db->query($sql, $id)->result_array();
-
     }
 
 

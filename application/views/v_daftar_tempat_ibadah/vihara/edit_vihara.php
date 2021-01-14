@@ -16,7 +16,12 @@
 
             <div class="card-header">
             
-                <h4>Pilih lokasi:</h4>      
+            <div class="row ">
+
+              <h4 class="ml-2">Pilih lokasi:</h4>      
+              <button type="button" class="btn btn-outline-info btn-sm ml-auto mr-2" onclick="getLocation()">Get my location</button>
+
+            </div>      
               
             </div>
 
@@ -307,6 +312,21 @@ function getData_peta(){
 
 }
 
+
+function getLocation() {
+
+navigator.geolocation.getCurrentPosition(function(location) {
+        var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
+
+        //map view 
+        console.log(location.coords.latitude, location.coords.longitude);
+
+        document.getElementById("Latitude").value = location.coords.latitude;
+        document.getElementById("Longitude").value = location.coords.longitude;
+
+      });
+      alert('Titik koordinat berhasil di set!');
+}
 
 </script>
 

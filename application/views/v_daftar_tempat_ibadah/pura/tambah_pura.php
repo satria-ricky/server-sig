@@ -19,8 +19,9 @@
             <div class="card-header">
             
             <div class="row ">
-                <h4>Pilih lokasi:</h4>      
-                <button type="button" class="btn btn-outline-info btn-sm ml-auto" onclick="getLocation()">Get my location</button>
+                <h4 class="ml-2">Pilih lokasi:</h4>      
+                <button type="button" class="btn btn-outline-info btn-sm ml-auto mr-2" onclick="getLocation()">Get my location</button>
+
               </div>      
               
             </div>
@@ -319,7 +320,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
         document.getElementById("Longitude").value = location.coords.longitude;
 
       });
-
+      alert('Titik koordinat berhasil di set!');
 }
 
 
