@@ -1,20 +1,9 @@
+<div class="container-fluid">
+<a href="<?= base_url('c_tempat_ibadah/masjid'); ?>" class="btn btn-info mb-2"><i class="fa fa-arrow-left"></i> Lihat data masjid</a>
 
-
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <!-- Page Heading -->
-          
-          <a href="<?= base_url('c_tempat_ibadah/masjid'); ?>" class="btn btn-info mb-2"><i class="fa fa-arrow-left"></i> Lihat data masjid</a>
-            <!-- <h3 class="font-weight-bold mt-3">Tambah data masjid</h3> -->
-          
-          
 <div class="row">
   <div class="col-sm-7">
-    
-
     <div class="card">
-
             <div class="card-header">
               <div class="row ">
                 <h4 class="ml-2">Pilih lokasi:</h4>      
@@ -22,20 +11,11 @@
             </div>
                 
             </div>
-
-
                 <div id="mapid" style="height: 450px;"></div>
-                
-
-            
     </div>
-
-
   </div>
 
   <div class="col-sm-5">
-    
-
     <div class="card">
             <div class="card-header">
             
@@ -106,11 +86,6 @@
                     </div>
                   </div>
                 </div>
-
-
-
-
-
     </div>
   </div>
 </div>
@@ -175,32 +150,15 @@
                   </div>
                 <?= form_close(); ?>
               </div>
-
-
-
 </div>
-
- 
-
         </div>
-        <!-- /.container-fluid -->
-
       </div>
-      <!-- End of Main Content -->
-
+      
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     
 <script> 
-
-
-
-    
-
-
     function get_peta_by_kab() {
 
       var id_kab = $("#kabupaten").val();

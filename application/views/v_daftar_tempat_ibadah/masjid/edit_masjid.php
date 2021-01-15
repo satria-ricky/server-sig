@@ -1,41 +1,20 @@
 
-
-        <!-- Begin Page Content -->
         <div class="container-fluid">
-
-          <!-- Page Heading -->
-          
-          <a href="<?= base_url('c_tempat_ibadah/masjid'); ?>" class="btn btn-info mb-2"><i class="fa fa-arrow-left"></i> Kembali</a> 
-            <!-- <h3 class="font-weight-bold mt-3">Edit Data Masjid</h3> -->
-           
+          <a href="<?= base_url('c_tempat_ibadah/masjid'); ?>" class="btn btn-info mb-2"><i class="fa fa-arrow-left"></i> Kembali</a>            
 <div class="row">
   <div class="col-sm-7">
-    
-
     <div class="card">
-
-            <div class="card-header">
-            
+            <div class="card-header"> 
               <div class="row ">
-
                 <h4 class="ml-2">Pilih lokasi:</h4>      
                 <button type="button" class="btn btn-outline-info btn-sm ml-auto mr-2" onclick="getLocation()">Get my location</button>
-              
               </div>       
-              
             </div>
-
-
-                <div id="mapid" style="height: 450px;"></div>
-            
+                <div id="mapid" style="height: 450px;"></div>  
     </div>
-
-
   </div>
 
   <div class="col-sm-5">
-    
-
     <div class="card">
             <div class="card-header">
             
@@ -117,7 +96,6 @@
 
 <div class="card">
     <div class="card-body">
-
               <label for="basic-url">Luas tanah</label>
               <div class="form-group">
                 <input type="tesxt" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="luas_tanah" value="<?= $tempat_ibadah['ti_luas_tanah']; ?>">
@@ -162,9 +140,6 @@
               <div class="form-group">
                 <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="telepon" value="<?= $tempat_ibadah['ti_telepon']; ?>">
               </div>
-
-             
-
               <label for="basic-url">Foto</label>
               <div class="mb-2">
               <img src="<?= base_url('assets/foto/tempat_ibadah/').$tempat_ibadah['ti_foto']; ?>" width="100" class="card-img" style="width: 10rem;"> 
@@ -179,24 +154,11 @@
               </div>
             <?= form_close(); ?>
           </div>
-
     </div>
   </div>
 </div>
-    
-
-
-
-
-
-
-
         </div>
-        <!-- /.container-fluid -->
-
       </div>
-      <!-- End of Main Content -->
-
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

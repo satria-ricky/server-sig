@@ -293,7 +293,7 @@ class M_tempat_ibadah extends CI_model {
         $this->db->delete('tb_ti');
     }
 
-     public function edit_ti($id, $data){     
+    public function edit_ti($id, $data){     
         $this->db->update('tb_ti', $data, array('ti_id' => $id));
     }
     
