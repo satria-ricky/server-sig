@@ -788,11 +788,11 @@ class C_tempat_ibadah extends CI_Controller {
         
         if($hapus_foto['ti_foto'] != 'masjid.png'){
             unlink(FCPATH . 'assets/foto/tempat_ibadah/' . $hapus_foto['ti_foto']);
-            
+           
         }
         
         $this->M_tempat_ibadah->hapus_ti($v_id);
-        unlink(FCPATH . 'assets/foto/tempat_ibadah/' . $v_foto_lama);
+        
         $this->session->set_flashdata('pesan', '<div class="alert alert-success" role="alert">Data berhasil dihapus!</div>');
         redirect('c_tempat_ibadah/masjid');
     }
