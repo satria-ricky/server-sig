@@ -562,14 +562,7 @@ mymap.addLayer (new L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}
 
   var markersLayer = new L.LayerGroup();	
 	mymap.addLayer(markersLayer);
-	// var controlSearch = new L.Control.Search({
-	// 	position:'topleft',		
-	// 	layer: markersLayer,
-	// 	initial: false,
-	// 	zoom: 17,
-	// 	marker: false
-  // });
-  
+
 	mymap.addControl( new L.Control.Search({
     position:'topleft',	
 		layer: markersLayer,
@@ -580,8 +573,6 @@ mymap.addLayer (new L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}
 
 
     var mylocation = L.marker(latlng).addTo(mymap).bindPopup('Youre location!');
-    
-
 
 
     for(var i =0;i < data.length; i++){
