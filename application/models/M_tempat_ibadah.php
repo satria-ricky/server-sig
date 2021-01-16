@@ -20,8 +20,7 @@ class M_tempat_ibadah extends CI_model {
 
     public function selectById($id){
         $sql='SELECT * FROM tb_ti LEFT JOIN tb_kabupaten ON tb_ti.ti_kabupaten = tb_kabupaten.kab_id LEFT JOIN tb_kecamatan ON tb_kecamatan.id_kab = tb_kabupaten.kab_id AND tb_kecamatan.kec_id = tb_ti.ti_kecamatan JOIN tb_jenis ON tb_ti.ti_jenis = tb_jenis.jenis_id WHERE ti_id =?';
-        return $query=$this->db->query($sql,$id)->row_array();
-        
+        return $query=$this->db->query($sql,$id)->row_array(); 
     }
 
 

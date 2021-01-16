@@ -20,10 +20,8 @@ class M_admin extends CI_model {
 
 
     public function auth($v_username, $v_password, $v_idbidang){
-        
         $sql='SELECT * FROM tb_admin where admin_username=? AND admin_password=? AND admin_bidang=?';
         return $this->db->query($sql, array($v_username,$v_password,$v_idbidang))->row_array();
-
     }
 
     public function selectIdAdmin($v_username){
