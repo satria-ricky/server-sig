@@ -18,10 +18,22 @@ class M_tempat_ibadah extends CI_model {
     }
 
 
-    public function selectById($id){
-        $sql='SELECT * FROM tb_ti LEFT JOIN tb_kabupaten ON tb_ti.ti_kabupaten = tb_kabupaten.kab_id LEFT JOIN tb_kecamatan ON tb_kecamatan.id_kab = tb_kabupaten.kab_id AND tb_kecamatan.kec_id = tb_ti.ti_kecamatan JOIN tb_jenis ON tb_ti.ti_jenis = tb_jenis.jenis_id WHERE ti_id =?';
-        return $query=$this->db->query($sql,$id)->row_array(); 
+
+    public function selectByLat($lat, $id){
+      $sql='SELECT * FROM tb_ti LEFT JOIN tb_kabupaten ON tb_ti.ti_kabupaten = tb_kabupaten.kab_id LEFT JOIN tb_kecamatan ON tb_kecamatan.id_kab = tb_kabupaten.kab_id AND tb_kecamatan.kec_id = tb_ti.ti_kecamatan JOIN tb_jenis ON tb_ti.ti_jenis = tb_jenis.jenis_id WHERE latitude !=? AND jenis_id = ?' ;
+      return $this->db->query($sql,[$lat, $id])->result_array();
     }
+
+    public function selectByIdLat($lat){
+        $sql='SELECT * FROM tb_ti LEFT JOIN tb_kabupaten ON tb_ti.ti_kabupaten = tb_kabupaten.kab_id LEFT JOIN tb_kecamatan ON tb_kecamatan.id_kab = tb_kabupaten.kab_id AND tb_kecamatan.kec_id = tb_ti.ti_kecamatan JOIN tb_jenis ON tb_ti.ti_jenis = tb_jenis.jenis_id WHERE latitude !=?';
+        return $query=$this->db->query($sql, $lat)->result_array(); 
+    }
+
+
+    public function selectById($id){
+      $sql='SELECT * FROM tb_ti LEFT JOIN tb_kabupaten ON tb_ti.ti_kabupaten = tb_kabupaten.kab_id LEFT JOIN tb_kecamatan ON tb_kecamatan.id_kab = tb_kabupaten.kab_id AND tb_kecamatan.kec_id = tb_ti.ti_kecamatan JOIN tb_jenis ON tb_ti.ti_jenis = tb_jenis.jenis_id WHERE ti_id =?';
+      return $query=$this->db->query($sql,$id)->row_array(); 
+  }
 
 
     public function selectAlltempatIbadah(){
@@ -31,6 +43,8 @@ class M_tempat_ibadah extends CI_model {
 
 
 // DASHBOARD
+
+
 
     public function selectByKabupaten($kab){
         $sql='SELECT * FROM tb_ti LEFT JOIN tb_kabupaten ON tb_ti.ti_kabupaten = tb_kabupaten.kab_id LEFT JOIN tb_kecamatan ON tb_kecamatan.id_kab = tb_kabupaten.kab_id AND tb_kecamatan.kec_id = tb_ti.ti_kecamatan JOIN tb_jenis ON tb_ti.ti_jenis = tb_jenis.jenis_id WHERE ti_kabupaten =?' ;

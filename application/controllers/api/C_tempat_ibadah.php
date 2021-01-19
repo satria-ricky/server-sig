@@ -21,7 +21,7 @@ class C_tempat_ibadah extends REST_Controller
     {
         $v_id_kab = $this->get('kab_id');
         $v_id_jenis = $this->get('jenis_id');
-
+        
         if (($v_id_kab != null) && ($v_id_jenis != null)) {
             $v_tempat_ibadah  = $this->M_tempat_ibadah->selectByKabJenis($v_id_kab,$v_id_jenis);
         }elseif (($v_id_kab != null) && ($v_id_jenis === null)) {

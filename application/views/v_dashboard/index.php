@@ -100,8 +100,7 @@
             <div class="card-header py-3">
             
            
-                   
-            	 
+              
 
                 <select class="custom-select col-3 ml-auto" id="jenis_ibadah" name="scrolljenis" required="">
                       <option value="">--Pilih jenis tempat ibadah--</option>

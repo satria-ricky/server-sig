@@ -10,7 +10,7 @@ require APPPATH . '/libraries/Format.php';
 use Restserver\Libraries\REST_Controller;  
 
 
-class C_masjid extends REST_Controller 
+class C_lat extends REST_Controller 
 {
     public function __construct ()
     {
@@ -21,14 +21,16 @@ class C_masjid extends REST_Controller
 
     public function index_get()
     {
-        $v_id = $this->get('kab_id');
-
-        if ($v_id === null) {
-            $v_tempat_ibadah['list_tempat_ibadah']  = $this->M_tempat_ibadah->selectMasjid();
-        }else {
-            $v_tempat_ibadah['list_tempat_ibadah']  = $this->M_tempat_ibadah->selectMasjidByKab($v_id);
-        }
+        $vlat = $this->get('latitude');
+        $id = $this->get('jenis_id');
         
+        if ($vlat == null && $id != null) {
+            $v_tempat_ibadah  = $this->M_tempat_ibadah->selectByLat($vlat, $id);
+        }else if ($vlat == null && $id == null) {
+            $v_tempat_ibadah  = $this->M_tempat_ibadah->selectByIdLat($vlat);
+        }
+
+       
 
         if  ($v_tempat_ibadah)  {
             $this->response([
