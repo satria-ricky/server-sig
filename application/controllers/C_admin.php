@@ -1,17 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-
-
 class C_admin extends CI_Controller {
     
     public $var;
 
     public function __construct(){
         parent::__construct();
-        // $this->load->helper('cekLogin_helper');
         cek_login();
-        
     }
 
 

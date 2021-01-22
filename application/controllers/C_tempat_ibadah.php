@@ -4,12 +4,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 include APPPATH.'third_party/PHPExcel/PHPExcel.php';
 
 class C_tempat_ibadah extends CI_Controller {
-    
-    
 
     public function __construct(){
         parent::__construct();
         cek_login();
+        
+        
+        
         $this->load->library('googlemaps');
     }
 
