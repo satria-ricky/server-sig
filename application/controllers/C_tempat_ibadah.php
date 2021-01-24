@@ -396,7 +396,7 @@ class C_tempat_ibadah extends CI_Controller {
             if($upload_foto){
                 
                 $config['allowed_types'] = 'gif|jpg|png|jpeg';
-                $config['max_size']     = '5000';
+                $config['max_size']     = '15000';
                 $config['upload_path'] = './assets/foto/tempat_ibadah/';
                     
                 $this->load->library('upload', $config);
@@ -529,7 +529,7 @@ class C_tempat_ibadah extends CI_Controller {
             if($upload_foto){
                 
                 $config['allowed_types'] = 'gif|jpg|png|jpeg';
-                $config['max_size']     = '5000';
+                $config['max_size']     = '15000';
                 $config['upload_path'] = './assets/foto/tempat_ibadah/';
                     
                 $this->load->library('upload', $config);
@@ -902,7 +902,7 @@ class C_tempat_ibadah extends CI_Controller {
             if($upload_foto){
                 
                 $config['allowed_types'] = 'gif|jpg|png|jpeg';
-                $config['max_size']     = '5000';
+                $config['max_size']     = '15000';
                 $config['upload_path'] = './assets/foto/tempat_ibadah/';
                     
                 $this->load->library('upload', $config);
@@ -1015,7 +1015,7 @@ class C_tempat_ibadah extends CI_Controller {
             if($upload_foto){
                 
                 $config['allowed_types'] = 'gif|jpg|png|jpeg';
-                $config['max_size']     = '5000';
+                $config['max_size']     = '15000';
                 $config['upload_path'] = './assets/foto/tempat_ibadah/';
                     
                 $this->load->library('upload', $config);
@@ -1336,7 +1336,7 @@ public function pura(){
             if($upload_foto){
                 
                 $config['allowed_types'] = 'gif|jpg|png|jpeg';
-                $config['max_size']     = '5000';
+                $config['max_size']     = '15000';
                 $config['upload_path'] = './assets/foto/tempat_ibadah/';
                     
                 $this->load->library('upload', $config);
@@ -1447,7 +1447,7 @@ public function pura(){
             if($upload_foto){
                 
                 $config['allowed_types'] = 'gif|jpg|png|jpeg';
-                $config['max_size']     = '5000';
+                $config['max_size']     = '15000';
                 $config['upload_path'] = './assets/foto/tempat_ibadah/';
                     
                 $this->load->library('upload', $config);
@@ -1778,7 +1778,7 @@ public function pura(){
             if($upload_foto){
                 
                 $config['allowed_types'] = 'gif|jpg|png|jpeg';
-                $config['max_size']     = '5000';
+                $config['max_size']     = '15000';
                 $config['upload_path'] = './assets/foto/tempat_ibadah/';
                     
                 $this->load->library('upload', $config);
@@ -1895,7 +1895,7 @@ public function pura(){
             if($upload_foto){
                 
                 $config['allowed_types'] = 'gif|jpg|png|jpeg';
-                $config['max_size']     = '5000';
+                $config['max_size']     = '15000';
                 $config['upload_path'] = './assets/foto/tempat_ibadah/';
                     
                 $this->load->library('upload', $config);
@@ -2222,7 +2222,7 @@ public function klenteng(){
             if($upload_foto){
                 
                 $config['allowed_types'] = 'gif|jpg|png|jpeg';
-                $config['max_size']     = '5000';
+                $config['max_size']     = '15000';
                 $config['upload_path'] = './assets/foto/tempat_ibadah/';
                     
                 $this->load->library('upload', $config);
@@ -2338,7 +2338,7 @@ public function klenteng(){
             if($upload_foto){
                 
                 $config['allowed_types'] = 'gif|jpg|png|jpeg';
-                $config['max_size']     = '5000';
+                $config['max_size']     = '15000';
                 $config['upload_path'] = './assets/foto/tempat_ibadah/';
                     
                 $this->load->library('upload', $config);
