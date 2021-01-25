@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 24, 2021 at 06:37 AM
+-- Generation Time: Jan 25, 2021 at 04:41 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -388,7 +388,46 @@ INSERT INTO `tb_ti` (`ti_id`, `ti_jenis`, `ti_tipologi`, `ti_nama`, `ti_alamat`,
 (507, '1', 'Masjid Jami', 'Masjid At-Taubah', 'Karang Bedil Mataram', '10', '3', '-', 'Wakaf', '-', '1985', '> 200', 5, 2, 0, NULL, NULL, NULL, NULL, '-', '-8.592635208414178', '116.11010408957098', '203_At_Taubah.jpg'),
 (508, '1', 'Masjid Jami', 'Masjid Al-Muttaqin', 'Lingkungan Banjar', '10', '1', '-', 'Wakaf', '-', '1989', '> 200', 6, 6, 0, NULL, NULL, NULL, NULL, '-', '-8.575646230780778', '116.07550062632318', '223_al_muttaqin.jpg'),
 (509, '1', 'Masjid Jami', 'Masjid Nurul Huda', 'Lingkungan Sintung', '10', '1', '-', 'Wakaf', '-', '1958', '> 200', 7, 7, 0, NULL, NULL, NULL, NULL, '-', '-8.573418593837616', '116.07531232632307', '225_Masjid_Nurul_Huda.jpg'),
-(510, '1', 'Masjid Jami', 'Masjid Baiturrahman', 'Moncok Karya', '10', '1', '-', 'Wakaf', '-', '1976', '> 200', 6, 6, 0, NULL, NULL, NULL, NULL, '-', '-8.569199571950461', '116.09419505157157', '230_Baiturrahman.jpg');
+(510, '1', 'Masjid Jami', 'Masjid Baiturrahman', 'Moncok Karya', '10', '1', '-', 'Wakaf', '-', '1976', '> 200', 6, 6, 0, NULL, NULL, NULL, NULL, '-', '-8.569199571950461', '116.09419505157157', '230_Baiturrahman.jpg'),
+(511, '1', 'Masjid Jami', 'Masjid Al-Islah', 'Jln.Garuda No.9 Monjok', '10', '', '-', 'Wakaf', '-', '1997', '> 200', 7, 10, 0, NULL, NULL, NULL, NULL, '-', '-8.578381615530699', '116.11787985577088', '69MasjidAlIslah.jpg'),
+(512, '1', 'Masjid Jami', 'Masjid Al-Falah', 'Jl.Ade Irma Suryani', '10', '', '-', 'Wakaf', '-', '1990', '> 200', 2, 5, 0, NULL, NULL, NULL, NULL, '-', '-8.577829673511541', '116.12371365870199', '70MasjidAlFalah.jpg'),
+(513, '1', 'Masjid Jami', 'Masjid Al-Ikhlas', 'BTN Alamanda', '10', '5', '-', 'SHM', '-', '2012', '> 200', 4, 3, 0, NULL, NULL, NULL, NULL, '-', '-8.59415399382321', '116.08454199687549', '103MasjidAlIkhlas.jpg'),
+(514, '1', 'Masjid Jami', 'Masjid Nurul A\'la', 'Karang Pule', '10', '5', '-', 'Wakaf', '-', '2005', '> 200', 4, 7, 0, NULL, NULL, NULL, NULL, '-', '-8.600436399999998', '116.09080562944776', '107MasjidNurulAla.jpg'),
+(515, '1', 'Masjid Jami', 'Masjid Nurul Islam', 'Karang Seme', '10', '5', '-', 'Wakaf', '-', '2013', '> 200', 3, 7, 0, NULL, NULL, NULL, NULL, '-', '-8.60078404177289', '116.09598679687554', '108MasjidNurulIslam.jpg'),
+(516, '1', 'Masjid Jami', 'Masjid Baiturrahman', 'Sekarbela Mas Mutiara', '10', '5', '-', 'Wakaf', '-', '1998', '> 200', 7, 6, 0, NULL, NULL, NULL, NULL, '--', '-8.601344030807764', '116.09280185577111', '110Baiturrahman.jpg'),
+(517, '1', 'Masjid Jami', 'Masjid Darul Arqom', 'Batu Ringgit Selatan', '10', '5', '-', 'Wakaf', '-', '2012', '> 200', 7, 9, 0, NULL, NULL, NULL, NULL, '-', '-8.604600066029239', '116.08494162034137', '112MasjidDarulArqom.jpg'),
+(518, '1', 'Masjid Jami', 'Masjid Darul Islam', 'Jempong Timur', '10', '5', '-', 'Wakaf', '-', '1975', '> 200', 4, 3, 0, NULL, NULL, NULL, NULL, '-', '-8.613201011030936', '116.10122322944774', '132MasjidDarulIslam.jpg'),
+(519, '1', 'Masjid Jami', 'Masjid Al-Ijtihad', 'Jempong Barat', '10', '5', '-', 'Wakaf', '-', '1990', '> 200', 4, 4, 0, NULL, NULL, NULL, NULL, '-', '-8.613028750259746', '116.09866253718272', '134MasjidAlIjtihad.jpg'),
+(520, '1', 'Masjid Jami', 'Masjid Al-Furqon', 'Kekalik Timur', '10', '5', '-', 'Wakaf', '-', '2003', '> 200', 3, 3, 0, NULL, NULL, NULL, NULL, '-', '-8.59227527815793', '116.08948659327197', '136MasjidAlFurqon.jpg'),
+(521, '1', 'Masjid Jami', 'Masjid Al-Faqi', 'Kekalik Gerisak', '10', '5', '-', 'Wakaf', '-', '2006', '> 200', 3, 4, 0, NULL, NULL, NULL, NULL, '-', '-8.594443699999996', '116.07868039999998', '137MasjidAlFaqi.jpg'),
+(522, '1', 'Masjid Jami', 'Masjid Darul Mukhlisin', 'Kekalik Gerisak', '10', '5', '-', 'Wakaf', '-', '1980', '> 200', 3, 4, 0, NULL, NULL, NULL, NULL, '-', '-8.589737818620913', '116.0837518431457', '139MasjidDarulMukhlisin.jpg'),
+(523, '1', 'Masjid Jami', 'Masjid Al-Jihad', 'Kekalik Indah', '10', '5', '-', 'Wakaf', '-', '1991', '> 200', 3, 3, 0, NULL, NULL, NULL, NULL, '-', '-8.59461399382288', '116.08779265577094', '140MasjidAlJihad.jpg'),
+(524, '1', 'Masjid Jami', 'Masjid Al-Istiqoman', 'Kekalik Kijang', '10', '5', '-', 'Wakaf', '-', '2006', '> 200', 4, 5, 0, NULL, NULL, NULL, NULL, '-', '-8.589495493826469', '116.08757662632321', '143MasjidAlIstiqomah.jpg'),
+(525, '1', 'Masjid Jami', 'Masjid Al-Mabrur', 'Kekalik Timur', '10', '5', '-', 'Wakaf', '-', '2008', '> 200', 3, 5, 0, NULL, NULL, NULL, NULL, '-', '-8.590031906198623', '116.08824575890438', '144MasjidAlMabrur.jpg'),
+(526, '1', 'Masjid Jami', 'Masjid Al-Ihsan', 'Karang Bata', '10', '4', '-', 'Wakaf', '-', '1996', '> 200', 4, 4, 0, NULL, NULL, NULL, NULL, '--', '-8.603888673988001', '116.12608232944775', '147MasjidAlIhsan.jpg'),
+(527, '1', 'Masjid Jami', 'Masjid Subulassalam', 'Karang Bata, Abian Tubuh Baru, Sandubaya', '10', '4', '-', 'Wakaf', '-', '1996', '> 200', 3, 3, 0, NULL, NULL, NULL, NULL, '-', '-8.601429899999994', '116.1262993', '148MasjidSubulassalam.jpg'),
+(528, '1', 'Masjid Jami', 'Masjid Raudhatul Jannah', 'Kebon Duren', '10', '4', '-', 'Wakaf', '-', '1930', '> 200', 3, 7, 0, NULL, NULL, NULL, NULL, '-', '-8.586930502855973', '116.14157788067998', '153MasjidRaudhatulJannah.jpg'),
+(529, '1', 'Masjid Jami', 'Masjid Al-Ikhlas', 'Selagalas', '10', '4', '-', 'Wakaf', '-', '1925', '> 200', 1, 6, 0, NULL, NULL, NULL, NULL, '-', '-8.583894936958933', '116.14329350000891', '155MasjidAlIkhlas.jpg'),
+(530, '1', 'Masjid Jami', 'Masjid Haqqul Yaqin', 'Gerung Butun Barat', '10', '4', '-', 'Wakaf', '-', '1991', '> 200', 4, 4, 0, NULL, NULL, NULL, NULL, '-', '-8.593827728025575', '116.1446851351278', '156MasjidHaqqulYaqin.jpg'),
+(531, '1', 'Masjid Jami', 'Masjid Nurul Hidayah', 'Lendang Lekong', '10', '4', '-', 'Wakaf', '-', '1996', '> 200', 3, 5, 0, NULL, NULL, NULL, NULL, '-', '-8.599728267792761', '116.15171172632336', '159MasjidNurulHidayah.jpg'),
+(532, '1', 'Masjid Jami', 'Masjid Nurul Huda', 'Jl.Izuddin Bukhori Montong Are', '10', '4', '-', 'Wakaf', '-', '1950', '> 200', 4, 4, 0, NULL, NULL, NULL, NULL, '-', '-8.605231896824282', '116.1536032185148', '161MasjidNurulHuda.jpg'),
+(533, '1', 'Masjid Jami', 'Masjid Dawa\'il Qulub', 'Tembelok', '10', '4', '-', 'Wakaf', '-', '2956', '> 200', 4, 4, 0, NULL, NULL, NULL, NULL, '-', '-8.60848777106571', '116.1514062257963', '162MasjidDawailQulub.jpg'),
+(534, '1', 'Masjid Jami', 'Masjid Nurul Hidayah', 'Butun Indah', '10', '4', '-', 'Wakaf', '-', '1979', '> 200', 3, 5, 0, NULL, NULL, NULL, NULL, '-', '-8.589805793990598', '116.15079585759437', '164MasjidNurulHidayah.jpg'),
+(535, '1', 'Masjid Jami', 'Masjid Darul Hidayah', 'Dasan Cermen', '10', '4', '-', 'Wakaf', '-', '2006', '> 200', 2, 5, 0, NULL, NULL, NULL, NULL, '-', '-8.612969737009907', '116.1273692', '170MasjidDarulHidayah.jpg'),
+(536, '1', 'Masjid Jami', 'Masjid Al-Mujahidin', 'Lingkungan Gegerung Indah Kelurahan Turida', '10', '4', '-', 'Wakaf', '-', '1985', '> 200', 2, 3, 0, NULL, NULL, NULL, NULL, '-', '-8.60063667359027', '116.14648132925421', '171MasjidAlMujahidin.jpg'),
+(537, '1', 'Masjid Jami', 'Masjid Al-Falah', 'Sayo Baru', '10', '4', '-', 'Wakaf', '-', '2011', '> 200', 2, 2, 0, NULL, NULL, NULL, NULL, '-', '-8.602930631103924', '116.14355175558552', '172MasjidAlFalah.jpg'),
+(538, '1', 'Masjid Jami', 'Masjid Nurul Magfiroh', 'Turida Timur', '10', '4', '-', 'Wakaf', '-', '1996', '> 200', 2, 3, 0, NULL, NULL, NULL, NULL, '-', '-8.606224382717969', '116.14534078002605', '174MasjidNurulMagfiroh.jpg'),
+(539, '1', 'Masjid Jami', 'Masjid Mamba\'ul Hasanah', 'Turida Barat', '10', '4', '-', 'Wakaf', '-', '1975', '> 200', 2, 2, 0, NULL, NULL, NULL, NULL, '-', '-8.609222894708811', '116.14241972320535', '175MasjidMambaulHasanah.jpg'),
+(540, '1', 'Masjid Jami', 'Masjid Istiqlal', 'Jl.Ali Napiah Babakan Timur Selatan', '10', '4', '-', 'Wakaf', '-', '1999', '> 200', 2, 3, 0, NULL, NULL, NULL, NULL, '-', '-8.605813404807217', '116.13721249687553', '176MasjidIstiqlal.jpg'),
+(541, '1', 'Masjid Jami', 'Masjid Samsul Huda', 'Jl.Ali Napiah Babakan Barat', '10', '4', '-', 'Wakaf', '-', '1941', '> 200', 5, 4, 0, NULL, NULL, NULL, NULL, '-', '-8.607500656813611', '116.13647299687565', '178MasjidSamsulHuda.jpg'),
+(542, '1', 'Masjid Jami', 'Masjid Raudhatul Jannah', 'Lingkungan Taman Indah', '10', '3', '-', 'Wakaf', '-', '1986', '> 200', 6, 3, 0, NULL, NULL, NULL, NULL, '-', '-8.596307073962555', '116.10462910007416', '181MasjidRaudhatulJannah.jpg'),
+(543, '1', 'Masjid Jami', 'Masjid Iman Salam', 'Jl.Koperasi Ampenan', '10', '1', '500 m2', 'Wakaf', '500 m2', '1960', '> 200', 4, 5, 0, NULL, NULL, NULL, NULL, '-', '-8.567929327169914', '116.08581396285577', '233MasjidImanSalam.jpg'),
+(544, '1', 'Masjid Jami', 'Masjid Al-Ikhlas', 'Jl. Adi Sucipto Ampenan', '10', '1', '-', 'Wakaf', '-', '1994', '> 200', 3, 4, 0, NULL, NULL, NULL, NULL, '-', '-8.56750945672559', '116.0810454269708', '234MasjidAlIkhlas.jpg'),
+(545, '1', 'Masjid Jami', 'Masjid Al-Haq', 'Jl. Koprasi Ampenan', '10', '1', '-', 'Wakaf', '-', '1965', '> 200', 6, 6, 0, NULL, NULL, NULL, NULL, '-', '-8.569333195769435', '116.0817713479819', '235MasjidAlHaq.jpg'),
+(546, '1', 'Masjid Jami', 'Masjid Lebai Sandar', 'Jl. Saleh Sungkar Ampenan', '10', '1', '-', 'Wakaf', '-', '1934', '> 200', 7, 7, 0, NULL, NULL, NULL, NULL, '-', '-8.569590663065929', '116.077422', '236MasjidLebaiSandar.jpg'),
+(547, '1', 'Masjid Jami', 'Masjid Babussalam', 'Ampenan Tengah', '10', '1', '-', 'Wakaf', '-', '1875', '> 200', 4, 4, 0, NULL, NULL, NULL, NULL, NULL, '-8.571639332229514', '116.07558455485118', '242MasjidBabussalam.jpg'),
+(548, '1', 'Masjid Jami', 'Masjid Awwalul Hidayah', 'Tempit', '10', '1', '-', 'Wakaf', '-', '1775', '> 200', 4, 4, 0, NULL, NULL, NULL, NULL, '-', '-8.571845655181663', '116.08329762328418', '243MasjidAwwalulHidayah.jpg'),
+(549, '1', 'Masjid Jami', 'Masjid Al-Hidayah', 'Sukaraja Timur', '10', '1', '-', 'Wakaf', '-', '1815', '> 200', 7, 6, 0, NULL, NULL, NULL, NULL, '-', '-8.57070522302495', '116.08141308241814', '246MasjidAlHidayah.jpg');
 
 --
 -- Indexes for dumped tables
@@ -456,7 +495,7 @@ ALTER TABLE `tb_kecamatan`
 -- AUTO_INCREMENT for table `tb_ti`
 --
 ALTER TABLE `tb_ti`
-  MODIFY `ti_id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=511;
+  MODIFY `ti_id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=550;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
